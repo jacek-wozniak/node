@@ -1,0 +1,20 @@
+// req.hostname
+// req.ip / req.ips
+// req.method
+// req.url / req.originalUrl / req.path
+// req.protocol / req.secure
+// req.query
+// req.get('Referer')
+// req.params
+// req.cookies
+
+// res.send()
+// res.json()
+// res.sendStatus(302);
+// res.location('https://google.com');
+// res.redirect('https://google.com');
+// res.sendFile('/logo.png');
+// res.attachment('/logo.png') / res.download();
+// res.set()
+// res.headersSent
+// res.cookie()npm iin
