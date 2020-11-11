@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27832a8f-1df2-4bf1-a7f0-0f1061d6dffa" name="Default Changelist" comment="" />
+    <list default="true" id="27832a8f-1df2-4bf1-a7f0-0f1061d6dffa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/news.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/news.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/quiz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/index.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/news_form.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/login.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/news.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/quiz.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +36,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1jrsU88oJie7nqNyFty3dBvbWXm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,7 +51,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.10.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="8.10.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/admin" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -42,9 +64,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views/admin" />
+      <recent name="$PROJECT_DIR$/views/index" />
       <recent name="$PROJECT_DIR$/routes" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views/admin" />
+      <recent name="$PROJECT_DIR$/views" />
+      <recent name="$PROJECT_DIR$/routes" />
       <recent name="$PROJECT_DIR$/static" />
     </key>
   </component>
@@ -60,7 +87,10 @@
       <workItem from="1604662736132" duration="3280000" />
       <workItem from="1604746943040" duration="22357000" />
       <workItem from="1604915176690" duration="316000" />
-      <workItem from="1604949684210" duration="1141000" />
+      <workItem from="1604949684210" duration="1565000" />
+      <workItem from="1604988893221" duration="86000" />
+      <workItem from="1605035697599" duration="3236000" />
+      <workItem from="1605085313839" duration="4316000" />
     </task>
     <servers />
   </component>
@@ -68,13 +98,21 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2585" y="341" width="580" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604822105665">
+    <state x="2585" y="341" width="604" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605086945404">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2585" y="341" width="580" height="396" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1604822105665" />
+    <state x="2585" y="341" width="604" height="396" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605086945404" />
     <state x="2020" y="98" width="1720" height="882" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1604778673176">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2020" y="98" width="1720" height="882" key="com.intellij.history.integration.ui.views.FileHistoryDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1604778673176" />
+    <state x="2571" y="278" width="618" height="522" key="find.popup" timestamp="1605089228854">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2571" y="278" width="618" height="522" key="find.popup/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605089228854" />
+    <state x="2544" y="246" key="run.anything.popup" timestamp="1605088202995">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2544" y="246" key="run.anything.popup/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605088202995" />
   </component>
 </project>
