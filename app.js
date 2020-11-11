@@ -7,19 +7,18 @@ var logger = require('morgan');
 var config = require('./config');
 var mongoose = require('mongoose');
 
-mongoose.connect(config.db, {useNewUrlParser: true});
+mongoose.connect(config.db, { useNewUrlParser: true });
+
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 
-
 var indexRouter = require('./routes/index');
-var adminRouter = require('./routes/admin');
 var newsRouter = require('./routes/news');
 var quizRouter = require('./routes/quiz');
+var adminRouter = require('./routes/admin');
+var apiRouter = require('./routes/api');
 
 var app = express();
-
-
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -36,24 +35,25 @@ app.use(cookieSession({
   maxAge: config.maxAgeSession
 }))
 
-
-app.use(function(req, res, next){
+app.use(function (req, res, next) {
   res.locals.path = req.path;
+
   next();
-})
+});
 
 app.use('/', indexRouter);
-app.use('/admin', adminRouter);
 app.use('/news', newsRouter);
 app.use('/quiz', quizRouter);
+app.use('/admin', adminRouter);
+app.use('/api', apiRouter);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};

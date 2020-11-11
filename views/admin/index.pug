@@ -5,17 +5,20 @@ block content
   nav
     ul
       li
-        a(href='/admin/news/add') Dodaj newsa
+        a(href='/admin/news/add') Dodaj
   table
     tr
-      th ID
-      th Tytuł
-      th Data dodania
+      th id
+      th tytuł
+      th data dodania
       th akcja
     each item, index in data
-      tr
+      tr 
         td=index
         td=item.title
         td=item.created
         td
-          a(href=`/admin/news/delete/${item.id}`) Usuń
+          a(href=`/admin/news/delete/${item._id}`) Usuń
+      
+          
+    

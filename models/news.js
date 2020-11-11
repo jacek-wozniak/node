@@ -1,10 +1,10 @@
-var mongoose = require('mongoose');
-const { Schema } = mongoose;
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
 const newsSchema = new Schema({
-  title:  {type: String, required: [true, 'Tytuł musi być wypełniony']}, // String is shorthand for {type: String}
-  description: {type: String, required: [true, 'Opis jest wymagany']},
-  created: { type: Date, default: Date.now }
+  title: { type: String, required: [true, 'Pole tytuł jest wymagane'] },
+  description: { type: String, required: [true, 'Pole opis jest wymagane'] },
+  created: { type: Date, default: Date.now },
 });
 
-module.exports = mongoose.model('News', newsSchema)
+module.exports = mongoose.model('News', newsSchema);

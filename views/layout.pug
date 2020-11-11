@@ -1,16 +1,18 @@
 doctype html
-mixin item(url, title)
-  li
-    a(href=url class=path==url ? 'active' : '')=title
+mixin item(title, url)
+  li(class='list-item')
+    a(href=url class=`item ${path == url ? 'active' : ''}`)=title
 
 html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    ul
-      +item("/", 'Strona główna')
-      +item("/news", 'Aktualności')
-      +item("/quiz", 'Quiz')
-      +item("/admin", 'Admin')
+    nav
+      ul
+        +item('Strona główna', '/') 
+        +item('Aktualności', '/news') 
+        +item('Quiz', '/quiz') 
+        +item('Admin', '/admin') 
+
     block content
